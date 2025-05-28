@@ -49,9 +49,19 @@ function getWeather() {
     .catch(error => {
       console.error('Error:', error);
       document.getElementById('weatherResult').innerText = 'Unable to fetch weather data.';
-      setBackgroundImage("default.gif");
+      setBackgroundImage("normal.gif");
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("cityInput");
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      getWeather();
+    }
+  });
+});
 
 function setBackgroundImage(filename) {
   document.getElementById("bgImage").src = `images/${filename}`;

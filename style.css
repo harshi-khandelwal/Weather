@@ -35,7 +35,7 @@ body {
 }
 
 input[type="text"] {
-  padding: 12px 20px;
+ 
   font-size: 1rem;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -58,7 +58,7 @@ input[type="text"]:focus {
 }
 
 button {
-  padding: 12px 24px;
+ 
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.4);
   color: #ffffff76;
@@ -162,12 +162,12 @@ p {
 @media (max-width: 480px) {
   input[type="text"] {
     font-size: 0.95rem;
-    padding: 10px 16px;
+    padding: 0px 0px;
   }
 
   button {
     font-size: 0.95rem;
-    padding: 10px 16px;
+    padding: 0px 0px;
   }
 
   .info-box p {
